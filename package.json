@@ -1,6 +1,9 @@
 {
   "name": "semfednet",
   "version": "0.0.0",
+  "scripts": {
+    "install": "grunt publish"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/megoth/semfednet.git"
