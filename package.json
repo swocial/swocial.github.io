@@ -1,9 +1,6 @@
 {
   "name": "semfednet",
   "version": "0.0.0",
-  "scripts": {
-    "install": "grunt publish"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/megoth/semfednet.git"
@@ -20,6 +17,9 @@
     "load-grunt-tasks": "^0.6.0",
     "load-grunt-config": "^0.12.0",
     "grunt-markdown": "^0.6.1",
-    "grunt": "^0.4.5"
+    "grunt": "^0.4.5",
+    "glob": "^4.0.5",
+    "q": "^1.0.1",
+    "extend": "^1.3.0"
   }
 }
