@@ -21,14 +21,9 @@ module.exports = function (grunt) {
       files: [
         {
           expand: true,
+          flatten: true,
           src: 'book/**/*.md',
-          dest: './',
-          ext: '.html'
-        },
-        {
-          expand: true,
-          src: 'index.md',
-          dest: './',
+          dest: '.',
           ext: '.html'
         }
       ]
