@@ -1,0 +1,30 @@
+{
+  "name": "semfednet",
+  "version": "0.0.0",
+  "homepage": "https://github.com/megoth/semfednet",
+  "authors": [
+    "Arne Hassel <arne.hassel@gmail.com>"
+  ],
+  "description": "Thoughts on building a Federated Social Network as part of the Semantic Web",
+  "keywords": [
+    "Semantic",
+    "Web",
+    "Federated",
+    "Social",
+    "Network",
+    "Distributed",
+    "Social",
+    "Network"
+  ],
+  "license": "None",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "~3.0.1"
+  }
+}

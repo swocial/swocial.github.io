@@ -1,0 +1,40 @@
+@import "../bower_components/normalize.css/normalize.css";
+
+$screen-small: 30em;
+$screen-medium: 45em;
+$screen-large: 60em;
+
+$color-text: #000000;
+$color-link: #efefef;
+$color-link-focus: #e2e2e2;
+
+body {
+  color: $color-text;
+  font-family: georgia, "times new roman", times, serif;
+  line-height: 1.5em;
+  @media (min-width: $screen-small) {
+    margin: 0 auto;
+    max-width: $screen-medium;
+    width: 90%;
+  }
+}
+
+h1,
+h2 {
+  font-family: Georgia,serif;
+  line-height: 1.8em;
+}
+
+a {
+  background: $color-link;
+  border: solid $color-link 0.25em;
+  border-radius: 0.25em;
+  color: $color-text;
+  text-decoration: none;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: $color-link-focus;
+    border-color: $color-link-focus;
+  }
+}
