@@ -1,5 +1,7 @@
 <!--{
-  "title": "Test"
+  "title": "Test",
+  "previous": "intro",
+  "next": null
 }-->Test
 ====
 

@@ -1,5 +1,7 @@
 <!--{
-  "title": "Building a Federated Social Network as part of the Semantic Web"
+  "title": "Building a Federated Social Network as part of the Semantic Web",
+  "previous": null,
+  "next": null
 }-->Book
 ====
 

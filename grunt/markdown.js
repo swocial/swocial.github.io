@@ -16,6 +16,10 @@ module.exports = function (grunt) {
           var options = comments != "" ? JSON.parse(comments.substr(4, comments.length - 7)) : {};
           extend(context, options);
           return src.substr(comments.length);
+        },
+        templateContext: {
+          previous: null,
+          next: null
         }
       },
       files: [

@@ -2,9 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title><%=title%></title>
+    <title>${title}</title>
   </head>
-  <body>  
-    <%=content%>
+  <body>
+    <header>
+      <h1>${title}</h1>
+    </header>
+    <div role="main">
+      ${content}
+    </div>
+    <footer>
+      <% if (previous) { %><a href="${previous}">Previous chapter</a><% } %>
+      <% if (next) { %><a href="${next}">Next chapter</a><% } %>
+    </footer>
   </body>
 </html>
