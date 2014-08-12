@@ -3,19 +3,34 @@ body {
   color: black;
   font-family: georgia, "times new roman", times, serif;
   line-height: 1.5em;
+  margin: 1em;
 }
 @media (min-width: 30em) {
   body {
-    margin: 0 auto;
+    margin: 1em auto;
     max-width: 45em;
     width: 90%;
   }
 }
 
+footer {
+  border-top: solid 0.1em black;
+}
+
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
+  border-bottom: solid 0.1em black;
   font-family: Georgia,serif;
-  line-height: 1.8em;
+  line-height: 1.5em;
+  margin: 1em 0 0.25em;
+}
+
+p {
+  margin: 0.5em 0 1em;
 }
 
 a {
@@ -28,4 +43,21 @@ a {
 a:active, a:focus, a:hover {
   background-color: #e2e2e2;
   border-color: #e2e2e2;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 1em solid #cccccc;
+  margin: 1.5em 0;
+  padding: 0.5em 1em;
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+blockquote:before {
+  color: #cccccc;
+  content: open-quote;
+  float: left;
+  font-size: 4em;
+  line-height: 0;
+  margin-right: 0.1em;
+  margin-top: 0.5em;
 }

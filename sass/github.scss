@@ -7,22 +7,39 @@ $screen-large: 60em;
 $color-text: #000000;
 $color-link: #efefef;
 $color-link-focus: #e2e2e2;
+$color-blockquote: #f9f9f9;
+$color-blockquote-text: #ccc;
 
 body {
   color: $color-text;
   font-family: georgia, "times new roman", times, serif;
   line-height: 1.5em;
+  margin: 1em;
   @media (min-width: $screen-small) {
-    margin: 0 auto;
+    margin: 1em auto;
     max-width: $screen-medium;
     width: 90%;
   }
 }
 
+footer {
+  border-top: solid 0.1em $color-text;
+}
+
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
+  border-bottom: solid 0.1em $color-text;
   font-family: Georgia,serif;
-  line-height: 1.8em;
+  line-height: 1.5em;
+  margin: 1em 0 0.25em;
+}
+
+p {
+  margin: 0.5em 0 1em;
 }
 
 a {
@@ -36,5 +53,22 @@ a {
   &:hover {
     background-color: $color-link-focus;
     border-color: $color-link-focus;
+  }
+}
+
+blockquote { // inspired by http://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/
+  background: $color-blockquote;
+  border-left: 1em solid $color-blockquote-text;
+  margin: 1.5em 0;
+  padding: 0.5em 1em;
+  quotes: "\201C""\201D""\2018""\2019";
+  &:before {
+    color: $color-blockquote-text;
+    content: open-quote;
+    float: left;
+    font-size: 4em;
+    line-height: 0;
+    margin-right: 0.1em;
+    margin-top: 0.5em;
   }
 }

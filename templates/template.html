@@ -8,12 +8,33 @@
     <link href="css/github.css" media="all" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <header>
+      <% if (status || status == 0) { %>
+        <p>Status: ${status} (more will come...)</p>
+      <% } %>
+    </header>
     <div role="main">
       ${content}
     </div>
     <footer>
-      <% if (previous) { %><a href="${previous}">Previous chapter</a><% } %>
-      <% if (next) { %><a href="${next}">Next chapter</a><% } %>
+      <nav>
+        <ul>
+          <% if (previous) { %>
+          <li>
+            <a href="${previous}">Previous chapter</a>
+          </li>
+          <% } %>
+          <% if (next) { %>
+          <li>
+            <a href="${next}">Next chapter</a>
+          </li>
+          <% } %>
+        </ul>
+      </nav>
+      <div>
+        <a href="https://github.com/swocial/semfednet/">The Swocial project</a>
+        Last published: ${published}
+      </div> 
     </footer>
   </body>
 </html>

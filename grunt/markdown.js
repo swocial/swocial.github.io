@@ -1,4 +1,5 @@
-var extend = require('extend');
+var extend = require('extend'),
+  moment = require('moment');
 
 var extractComment = function (src) {
   var start = src.search(/<!--/g);
@@ -19,7 +20,8 @@ module.exports = function (grunt) {
         },
         templateContext: {
           previous: null,
-          next: null
+          next: null,
+          published: moment().format('YYYY.MM.DD')
         }
       },
       files: [
@@ -27,6 +29,12 @@ module.exports = function (grunt) {
           expand: true,
           flatten: true,
           src: 'book/**/*.md',
+          dest: '.',
+          ext: '.html'
+        },
+        {
+          expand: true,
+          src: './README.md',
           dest: '.',
           ext: '.html'
         }
