@@ -15,6 +15,14 @@ module.exports = function (grunt) {
         preCompile: function (src, context) {
           var comments = extractComment(src);
           var options = comments != "" ? JSON.parse(comments.substr(4, comments.length - 7)) : {};
+          var statusNames = {
+            0: 'Chapter scaffolded',
+            1: 'Research initiated',
+            2: 'Research complete',
+            3: 'Structure complete',
+            4: 'Chapter complete'
+          };
+          options.statusName = statusNames[options.status];
           extend(context, options);
           return src.substr(comments.length);
         },
