@@ -27,6 +27,27 @@ footer {
   border-top: solid 0.1em $color-text;
 }
 
+nav ul {
+  padding: 0;
+  li {
+    list-style-type: none;
+  }
+  @media (min-width: $screen-small) {
+    overflow: auto;
+    li {
+      display: inline;
+      a {
+        float: left;
+        margin-right: 1em;
+      }
+      a[rel="next"] {
+        float: right;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
 h1,
 h2,
 h3,

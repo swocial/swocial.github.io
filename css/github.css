@@ -17,6 +17,29 @@ footer {
   border-top: solid 0.1em black;
 }
 
+nav ul {
+  padding: 0;
+}
+nav ul li {
+  list-style-type: none;
+}
+@media (min-width: 30em) {
+  nav ul {
+    overflow: auto;
+  }
+  nav ul li {
+    display: inline;
+  }
+  nav ul li a {
+    float: left;
+    margin-right: 1em;
+  }
+  nav ul li a[rel="next"] {
+    float: right;
+    margin-right: 0;
+  }
+}
+
 h1,
 h2,
 h3,
