@@ -9,6 +9,7 @@ $color-link: #efefef;
 $color-link-focus: #e2e2e2;
 $color-blockquote: #f9f9f9;
 $color-blockquote-text: #ccc;
+$color-code: #f7f7f7;
 
 body {
   color: $color-text;
@@ -44,10 +45,10 @@ p {
 
 a {
   background: $color-link;
-  border: solid $color-link 0.25em;
+  border: solid $color-link 0;
   border-radius: 0.25em;
+  border-width: 0.15em 0.25em;
   color: $color-text;
-  text-decoration: none;
   &:active,
   &:focus,
   &:hover {
@@ -70,5 +71,20 @@ blockquote { // inspired by http://css-tricks.com/snippets/css/simple-and-nice-b
     line-height: 0;
     margin-right: 0.1em;
     margin-top: 0.5em;
+  }
+}
+
+code {
+  background-color: $color-code;
+  font-size: 0.85em;;
+  border-radius: 0.25rem;
+  p & {
+    display: inline-block;
+    padding: 0 0.25rem;
+    line-height: 1rem;
+  }
+  pre & {
+    display: block;
+    padding: 1rem;
   }
 }

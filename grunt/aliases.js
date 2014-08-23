@@ -1,5 +1,5 @@
 module.exports = {
   'publish': ['github'],
-  'github': ['markdown:github', 'rename:github', 'clean:github'],
+  'github': ['clean:githubPre', 'markdown:github', 'rename:github', 'clean:githubPost', 'sass:github'],
   'server': ['http-server:github']
 };

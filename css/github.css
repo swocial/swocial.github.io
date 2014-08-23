@@ -35,10 +35,10 @@ p {
 
 a {
   background: #efefef;
-  border: solid #efefef 0.25em;
+  border: solid #efefef 0;
   border-radius: 0.25em;
+  border-width: 0.15em 0.25em;
   color: black;
-  text-decoration: none;
 }
 a:active, a:focus, a:hover {
   background-color: #e2e2e2;
@@ -60,4 +60,19 @@ blockquote:before {
   line-height: 0;
   margin-right: 0.1em;
   margin-top: 0.5em;
+}
+
+code {
+  background-color: #f7f7f7;
+  font-size: 0.85em;
+  border-radius: 0.25rem;
+}
+p code {
+  display: inline-block;
+  padding: 0 0.25rem;
+  line-height: 1rem;
+}
+pre code {
+  display: block;
+  padding: 1rem;
 }

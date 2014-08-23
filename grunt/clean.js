@@ -1,5 +1,8 @@
 module.exports = {
-  github: {
+  githubPre: {
+    src: ['*.html']
+  },
+  githubPost: {
     src: ['README.html']
   }
 };

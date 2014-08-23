@@ -14,14 +14,25 @@
     </header>
     <div role="main">
       <h1 id="the-swocial-manifesto">The Swocial manifesto</h1>
-<p>There is a growing trend of walled gardens. At the same time there&#39;s an increased exposure of information about its inhabitants. The driving forces behind these trends does not seem to be about protecting the users and creating a better experience for them, but rather about increasing value for stockholders and exposure for advertisers.</p>
-<p>Walled gardens have their uses, as long as they serve our needs, and not the needs of advertisers, corporations and governments and others that may have interests misaligned with those of the users. In other words, walled gardens are good if we are the gardeners.</p>
+<p>There is a growing trend of walled gardens on the Internet. At the same time there&#39;s an increased exposure of information about its inhabitants. The driving forces behind these trends does not seem to be about protecting the users and creating a better experience for them, but rather about increasing value for stockholders and exposure for advertisers.</p>
+<p>Walled gardens have their uses, but they need to serve the needs of the private citizens, and not the needs of advertisers, corporations and governments and others that may have interests misaligned with those of the users. In other words, walled gardens are good if we are the gardeners.</p>
 <h2 id="the-book">The book</h2>
 <p><a href="http://github.com/swocial">The Swocial project</a> seeks to empower users with tools that enable them to handle their data, administrate them across service providers, and to let their data be utilized in new and innovative ways. There are many facets of this, consisting of many, intertwined challenges, which is why I&#39;ve decided to lay them out in this manifesto.</p>
 <p>It is a book that&#39;s in the making, and if you want to start reading what&#39;s available, start with the <a href="http://swocial.github.io/intro">Introduction</a> (in time it will also be available in other formats, such as PDF, EPUB and Mobi, but for now it&#39;s only available as a web page). If you&#39;re wondering about the status of chapters (i.e. &quot;How finished are they?&quot;), please read <a href="https://github.com/swocial/swocial.github.io/wiki">the wiki</a>.</p>
 <p>The book will be structured into two parts; the first part will explain some fundamental concepts necessary to understand to follow the ensuing discussion. The second part will dwell on the different aspects of a distributed social network that needs to be secure, ensure a user&#39;s privacy, be easy to use and provide a good user experience, and offer a flexible range of means to distribute and consume data. It will also take into account that such an environment needs to offer incentives to service providers, i.e. allow them to make profit, as all systems are somehow bound to economics (financial surplus being one for service providers).</p>
 <p>The Internet is a wonder of technological and cultural achievement. It is also - albeit a fact disliked by many computer scientists - very human. One aspect of this is the social networks, where a ever-growing number of people decides to partake and share their lives.</p>
 <p>I hope that this book can be part of a movement that envisions a world where the power of the share lies with users that do it - not the corporations and governments that aggregate it for their own profits.</p>
+<h3 id="how-to-generate-the-book">How to generate the book</h3>
+<p>For now only Markdown-to-HTML is supported. In the future scripts for generating PDF, EPUB and MOBI will also be available.</p>
+<pre><code>grunt github
+grunt watch:gh</code></pre>
+<p>The first command generates the file index.html from README.md, i.e. this text that you&#39;re reading now. It also takes all the chapters, which are located in <code>book/xx/y.md</code>, where <em>xx</em> is the two-siffered number of the chapter, and <em>y</em> is the name of the chapter in <a href="http://en.wikipedia.org/wiki/CamelCase">Camel case</a>. The chapters are flattened to the root folder, so that they can be easily linked.</p>
+<p>Meta-information about each HTML file are expressed in a comment block, which contains a JSON object, located in the top of each MD file. Below is an example:</p>
+<pre><code>&lt;!--{
+  &#39;key&#39;: &#39;value&#39;
+}--&gt;</code></pre>
+<p>In addition to generating the HTML files, the first command also generates the CSS files necessary. These are generated using <a href="http://sass-lang.com/">Sass</a>, a CSS pre-processor.</p>
+<p>The second command automates the first so that whenever you save a MD or a SCSS file, it will run the first command.</p>
 <h2 id="ways-to-contribute">Ways to contribute</h2>
 <p>There are several ways to contribute to the project:</p>
 <ul>
@@ -49,7 +60,7 @@
         </ul>
       </nav>
       <div>
-        Last published: 2014.08.12
+        Last published: 2014.08.23
       </div> 
     </footer>
     <script>
