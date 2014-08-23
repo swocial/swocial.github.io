@@ -2,7 +2,7 @@
   "title": "The Swocial manifesto",
   "status": null,
   "previous": null,
-  "next": null
+  "next": "intro"
 }-->
 # The Swocial manifesto
 
@@ -34,7 +34,7 @@ The first command generates the file index.html from README.md, i.e. this text t
 Meta-information about each HTML file are expressed in a comment block, which contains a JSON object, located in the top of each MD file. Below is an example:
 
     <!--{
-      'key': 'value'
+      "key": "value"
     }-->
 
 In addition to generating the HTML files, the first command also generates the CSS files necessary. These are generated using [Sass](http://sass-lang.com/), a CSS pre-processor.
