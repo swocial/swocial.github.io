@@ -26,6 +26,3 @@ node_modules
 
 # Sass related directories
 .sass-cache
-
-# Bower components
-bower_components
