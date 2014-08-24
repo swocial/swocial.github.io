@@ -65,16 +65,26 @@ p {
 }
 
 a {
-  background: $color-link;
-  border: solid $color-link 0;
-  border-radius: 0.25em;
-  border-width: 0.15em 0.25em;
   color: $color-text;
-  &:active,
-  &:focus,
-  &:hover {
-    background-color: $color-link-focus;
-    border-color: $color-link-focus;
+  p & {
+    background: $color-link;
+    border: solid $color-link 0;
+    border-radius: 0.25em;
+    border-width: 0.15em 0.25em;
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $color-link-focus;
+      border-color: $color-link-focus;
+    }
+  }
+  h1 &,
+  h2 &,
+  h3 &,
+  h4 &,
+  h5 &,
+  h6 & {
+    text-decoration: none;
   }
 }
 
