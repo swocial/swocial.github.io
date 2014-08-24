@@ -4,4 +4,4 @@
   "previous": "economy",
   "next": null
 }-->
-# Economy
+# Society
