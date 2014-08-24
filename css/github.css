@@ -59,13 +59,13 @@ p {
 a {
   color: black;
 }
-p a {
+p a, ul a {
   background: #efefef;
   border: solid #efefef 0;
   border-radius: 0.25em;
   border-width: 0.15em 0.25em;
 }
-p a:active, p a:focus, p a:hover {
+p a:active, p a:focus, p a:hover, ul a:active, ul a:focus, ul a:hover {
   background-color: #e2e2e2;
   border-color: #e2e2e2;
 }
