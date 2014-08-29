@@ -17,25 +17,25 @@ Manifesting the project will create challenges based on the fact that it will no
 
 There are factors concerning the project that have overlapping issues, conflicting requirements, and probably many other challenges I haven't though of. But the hope is to try to identify as many facets as possible, and deal with them succinctly. In order for this to be done, I must lay some foundations. This will be the purpose of part one, which will consist of three chapters.
 
-The first chapter in part one will be about the concepts of [Semantic Web](the-semantic-web). Many of these standards are already used throughout the net, in other projects, and have proven to be sturdy tools for expressing and communicate data.
+The first chapter in part one will be about the concepts of [Semantic Web](#the-semantic-web). Many of these standards are already used throughout the net, in other projects, and have proven to be sturdy tools for expressing and communicate data.
 
-The second chapter is about [Distributed Social Networks (DSNs)](distributed-social-networks). In addition to describing the core concepts of what they entail, it will also note some existing projects, and how they differ from the Swocial project.
+The second chapter is about [Distributed Social Networks (DSNs)](#distributed-social-networks). In addition to describing the core concepts of what they entail, it will also note some existing projects, and how they differ from the Swocial project.
 
-Lastly, there is the chapter on [Economics](economics). This will describe some basic theories of economics, compare them, and situate how the Swocial project relates to them.
+Lastly, there is the chapter on [Economics](#economics). This will describe some basic theories of economics, compare them, and situate how the Swocial project relates to them.
 
 ## Part two - Discussions
 
 This part will take on several discussions there are to be made on the Swocial project. It will have a bottom-to-top approach, meaning each chapter will in part build atop the discussion delt with in earlier chapter, i.e. there will be an accumulation of discussions.
 
-The first chapter will be on [Infrastructure](infrastructure), which includes different standards that are corner stones for DSNs, such as formats of data, protocols, and vocabularies. There will also be discussion on technical challenges, such as redundant data, synchronization issues, and latency.
+The first chapter will be on [Infrastructure](#infrastructure), which includes different standards that are corner stones for DSNs, such as formats of data, protocols, and vocabularies. There will also be discussion on technical challenges, such as redundant data, synchronization issues, and latency.
 
-The second chapter is about [Security](security), and deals with challenges such as cryptography, privacy, and authentication. It will propose several schemas to classes of users, and how these should be treated as across DSNs.
+The second chapter is about [Security](#security), and deals with challenges such as cryptography, privacy, and authentication. It will propose several schemas to classes of users, and how these should be treated as across DSNs.
 
-As important as the more hard issues such as infrastructure and security, is how the user interacts with the system, and this will be discussed in the chapter on [User experience](user-experience). Notably, the fact that a person has limited time to administrate their impact on the Internet, and there is a need for agents to work on the behalf of the users.
+As important as the more hard issues such as infrastructure and security, is how the user interacts with the system, and this will be discussed in the chapter on [User experience](#user-experience). Notably, the fact that a person has limited time to administrate their impact on the Internet, and there is a need for agents to work on the behalf of the users.
 
-With issues regarding infrastructure, security, and user experience in place, it's time to discuss the [Economy](economy) in a DSN. This involves currencies and markets, services and service providers, consumers and producers. An emphasis will be put on the different roles people will play in this economy, and how some of these can be troublesome when combined.
+With issues regarding infrastructure, security, and user experience in place, it's time to discuss the [Economy](#economy) in a DSN. This involves currencies and markets, services and service providers, consumers and producers. An emphasis will be put on the different roles people will play in this economy, and how some of these can be troublesome when combined.
 
-At last there will be a discussion on [Society](society); how will the Swocial project situate itself in the existing digital social sphere. How will it extend cultural structures already in place, what power structures should be in place (if any), and should these reflect or differ from the existing ones manifested throuh the development of human culture.
+At last there will be a discussion on [Society](#society); how will the Swocial project situate itself in the existing digital social sphere. How will it extend cultural structures already in place, what power structures should be in place (if any), and should these reflect or differ from the existing ones manifested throuh the development of human culture.
 
 ## Who the book is for
 

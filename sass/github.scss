@@ -36,11 +36,11 @@ nav ul {
     overflow: auto;
     li {
       display: inline;
+      float: left;
       a {
-        float: left;
         margin-right: 1em;
       }
-      a[rel="next"] {
+      &.next a {
         float: right;
         margin-right: 0;
       }

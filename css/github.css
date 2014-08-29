@@ -30,12 +30,12 @@ nav ul li {
   }
   nav ul li {
     display: inline;
+    float: left;
   }
   nav ul li a {
-    float: left;
     margin-right: 1em;
   }
-  nav ul li a[rel="next"] {
+  nav ul li.next a {
     float: right;
     margin-right: 0;
   }

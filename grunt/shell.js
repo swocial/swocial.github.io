@@ -10,5 +10,21 @@ module.exports = {
 							--normalize \
 							--smart \
 							--toc '
+	},
+	generateLatex: {
+		command: 'pandoc \
+							book/metadata.yaml temp/all.md \
+							-f markdown \
+							-t latex \
+							-o swocial-manifesto.tex \
+							--chapters \
+							--standalone \
+							--normalize \
+							--smart \
+							--toc '
+	},
+	generatePdf: {
+		command: 'pdflatex \
+							swocial-manifesto.tex'
 	}
 };

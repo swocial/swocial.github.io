@@ -1,6 +1,6 @@
 module.exports = {
-  epub: {
+  markdown: {
     src: ['book/**/*.md'],
-    dest: 'temp/epub.md'
+    dest: 'temp/all.md'
   }
 };

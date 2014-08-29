@@ -52,17 +52,13 @@ module.exports = function (grunt) {
       },
       files: [
         {
-          expand: true,
           flatten: true,
-          src: 'book/**/*.md',
-          dest: '.',
-          ext: '.html'
+          src: 'temp/all.md',
+          dest: 'swocial-manifesto.html'
         },
         {
-          expand: true,
           src: './README.md',
-          dest: '.',
-          ext: '.html'
+          dest: 'index.html'
         }
       ]
     },
@@ -90,7 +86,7 @@ module.exports = function (grunt) {
       },
       files: [
         {
-          src: 'temp/epub.md',
+          src: 'temp/all.md',
           dest: 'temp/epub.html'
         }
       ]
