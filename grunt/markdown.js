@@ -11,7 +11,7 @@ module.exports = function (grunt) {
   return {
     github: {
       options: {
-        template: 'templates/template.html',
+        template: 'templates/github.html',
         preCompile: function (src, context) {
           var comments = extractComment(src);
           var options = comments != "" ? JSON.parse(comments.substr(4, comments.length - 7)) : {};
@@ -45,6 +45,17 @@ module.exports = function (grunt) {
           src: './README.md',
           dest: '.',
           ext: '.html'
+        }
+      ]
+    },
+    epub: {
+      options: {
+        template: 'templates/epub.html'
+      },
+      files: [
+        {
+          src: 'temp/epub.md',
+          dest: 'temp/epub.html'
         }
       ]
     }
