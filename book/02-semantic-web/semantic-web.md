@@ -4,7 +4,10 @@
   "previous": "intro",
   "next": "distributed-social-networks"
 }-->
+
 # The Semantic Web
+
+A little bit of writing...
 
 ## Resource Description Framework (RDF)
 

@@ -1,7 +1,14 @@
 module.exports = {
 	generateEpub: {
-		command: 'kindlegen temp/epub.html \
-		-o epub.epub\
-		--epub-cover-image book/cover.png'
+		command: 'pandoc \
+							temp/epub.html \
+							-f html \
+							-t epub \
+							-o swocial-manifesto.epub \
+							--epub-cover-image book/cover.png \
+							--epub-stylesheet css/epub.css \
+							--normalize \
+							--smart \
+							--toc '
 	}
 };
