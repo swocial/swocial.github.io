@@ -22,7 +22,7 @@ var extractLink = function (src) {
 var convertLinkToInternalEpubLink = function (link) {
   var isInternal = link.search(/href=\"http/g) == -1 || link.search(/href=\"\#/g);
   if (!isInternal) return link;
-  return link.replace('href="', 'epub:type="chapter" href="#');
+  return link.replace('href="', 'epub:type="chapter" href="');
 };
 
 module.exports = function (grunt) {
