@@ -4,4 +4,7 @@
   "previous": "economy",
   "next": null
 }-->
+
 # Society
+
+A little bit of writing...

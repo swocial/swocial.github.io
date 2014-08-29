@@ -4,5 +4,11 @@ module.exports = {
   },
   githubPost: {
     src: ['README.html']
+  },
+  epubPre: {
+  	src: ['*.epub']
+  },
+  epubPost: {
+  	src: ['temp']
   }
 };

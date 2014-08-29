@@ -4,6 +4,7 @@
   "previous": null,
   "next": "semantic-web"
 }-->
+
 # Introduction
 
 This book is the manifesto of [the Swocial project](http://github.com/swocial). The project is about creating a distributed network of social applications, which as its very core has the interest of the private citizens as its core. That means to the extent possible allow the users to administrate the content they have produced, create rules for who get to see what, and - in regard to copyrights - decide how it may be used by others. This raises several questions about how this should be done in terms of technical requirements, user experience, and economical and legal ramifications.
@@ -16,9 +17,9 @@ Manifesting the project will create challenges based on the fact that it will no
 
 There are factors concerning the project that have overlapping issues, conflicting requirements, and probably many other challenges I haven't though of. But the hope is to try to identify as many facets as possible, and deal with them succinctly. In order for this to be done, I must lay some foundations. This will be the purpose of part one, which will consist of three chapters.
 
-The first chapter in part one will be about the concepts of [Semantic Web](semantic-web). Many of these standards are already used throughout the net, in other projects, and have proven to be sturdy tools for expressing and communicate data.
+The first chapter in part one will be about the concepts of [Semantic Web](the-semantic-web). Many of these standards are already used throughout the net, in other projects, and have proven to be sturdy tools for expressing and communicate data.
 
-The second chapter is about [Distributed Social Networks (DSNs)](distributed-social-network). In addition to describing the core concepts of what they entail, it will also note some existing projects, and how they differ from the Swocial project.
+The second chapter is about [Distributed Social Networks (DSNs)](distributed-social-networks). In addition to describing the core concepts of what they entail, it will also note some existing projects, and how they differ from the Swocial project.
 
 Lastly, there is the chapter on [Economics](economics). This will describe some basic theories of economics, compare them, and situate how the Swocial project relates to them.
 

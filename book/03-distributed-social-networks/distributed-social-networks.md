@@ -4,9 +4,10 @@
   "previous": "semantic-web",
   "next": "economics"
 }-->
+
 # Distributed Social Networks
 
-
+A little bit of writing...
 
 ## Existing distributed social networks
 
