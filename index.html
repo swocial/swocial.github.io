@@ -23,16 +23,18 @@
 <p>The Internet is a wonder of technological and cultural achievement. It is also - albeit a fact disliked by many computer scientists - very human. One aspect of this is the social networks, where a ever-growing number of people decides to partake and share their lives.</p>
 <p>I hope that this book can be part of a movement that envisions a world where the power of the share lies with users that do it - not the corporations and governments that aggregate it for their own profits.</p>
 <h3 id="how-to-generate-the-book">How to generate the book</h3>
-<p>For now only Markdown-to-HTML is supported. In the future scripts for generating PDF, EPUB and MOBI will also be available.</p>
+<p>To generate the book in all available formats, simple run <code>grunt</code>. In addition there are scripts for each format:</p>
 <pre><code>grunt github
-grunt watch:gh</code></pre>
-<p>The first command generates the file index.html from README.md, i.e. this text that you&#39;re reading now. It also takes all the chapters, which are located in <code>book/xx/y.md</code>, where <em>xx</em> is the two-siffered number of the chapter, and <em>y</em> is the name of the chapter in <a href="http://en.wikipedia.org/wiki/CamelCase">Camel case</a>. The chapters are flattened to the root folder, so that they can be easily linked.</p>
+grunt epub
+grunt mobi
+grunt pdf</code></pre>
+<p>The first command generates the file index.html from README.md, i.e. this text that you&#39;re reading now. It also takes all the chapters, which are located in <code>book/xx/y.md</code>, where <em>xx</em> is the two-siffered number of the chapter, and <em>y</em> is the name of the chapter in <a href="http://en.wikipedia.org/wiki/CamelCase">Camel case</a>. The chapters are combined into one file, that is the source for most scripts.</p>
 <p>Meta-information about each HTML file are expressed in a comment block, which contains a JSON object, located in the top of each MD file. Below is an example:</p>
 <pre><code>&lt;!--{
   &quot;key&quot;: &quot;value&quot;
 }--&gt;</code></pre>
 <p>In addition to generating the HTML files, the first command also generates the CSS files necessary. These are generated using <a href="http://sass-lang.com/">Sass</a>, a CSS pre-processor.</p>
-<p>The second command automates the first so that whenever you save a MD or a SCSS file, it will run the first command.</p>
+<p>For convenience there&#39;s also a command that automates the generating of github files, <code>grunt watch:gh</code>, so that whenever you save a MD or a SCSS file, it will run <code>grunt:github</code>.</p>
 <h2 id="ways-to-contribute">Ways to contribute</h2>
 <p>There are several ways to contribute to the project:</p>
 <ul>

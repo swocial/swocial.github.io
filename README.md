@@ -24,12 +24,14 @@ I hope that this book can be part of a movement that envisions a world where the
 
 ### How to generate the book
 
-For now only Markdown-to-HTML is supported. In the future scripts for generating PDF, EPUB and MOBI will also be available.
+To generate the book in all available formats, simple run `grunt`. In addition there are scripts for each format:
 
     grunt github
-    grunt watch:gh
+    grunt epub
+    grunt mobi
+    grunt pdf
 
-The first command generates the file index.html from README.md, i.e. this text that you're reading now. It also takes all the chapters, which are located in `book/xx/y.md`, where *xx* is the two-siffered number of the chapter, and *y* is the name of the chapter in [Camel case](http://en.wikipedia.org/wiki/CamelCase). The chapters are flattened to the root folder, so that they can be easily linked.
+The first command generates the file index.html from README.md, i.e. this text that you're reading now. It also takes all the chapters, which are located in `book/xx/y.md`, where *xx* is the two-siffered number of the chapter, and *y* is the name of the chapter in [Camel case](http://en.wikipedia.org/wiki/CamelCase). The chapters are combined into one file, that is the source for most scripts.
 
 Meta-information about each HTML file are expressed in a comment block, which contains a JSON object, located in the top of each MD file. Below is an example:
 
@@ -39,7 +41,7 @@ Meta-information about each HTML file are expressed in a comment block, which co
 
 In addition to generating the HTML files, the first command also generates the CSS files necessary. These are generated using [Sass](http://sass-lang.com/), a CSS pre-processor.
 
-The second command automates the first so that whenever you save a MD or a SCSS file, it will run the first command.
+For convenience there's also a command that automates the generating of github files, `grunt watch:gh`, so that whenever you save a MD or a SCSS file, it will run `grunt:github`.
 
 ## Ways to contribute
 
