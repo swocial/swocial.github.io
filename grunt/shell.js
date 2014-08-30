@@ -23,6 +23,9 @@ module.exports = {
 							--smart \
 							--toc '
 	},
+	generateMobi: {
+		command: 'kindlegen swocial-manifesto.epub'
+	},
 	generatePdf: {
 		command: 'pdflatex \
 							swocial-manifesto.tex'
