@@ -27,7 +27,7 @@ To generate the book in all available formats, simple run `grunt`. In addition t
 
 In addition to generating the different formats, some commands also generates the style files necessary. These are generated using [Sass](http://sass-lang.com/), a CSS pre-processor.
 
-For convenience there's also `grunt watch` that the default grunt-task (i.e. publication) each time a chapter, template or SCSS-file is saved.
+For convenience there's also `grunt watch` that triggers the default grunt-task (i.e. publication) each time a chapter, template or SCSS-file is saved.
 
 ## Ways to contribute
 
