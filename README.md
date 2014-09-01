@@ -27,12 +27,6 @@ To generate the book in all available formats, simple run `grunt`. In addition t
 
 The first command generates the file index.html from README.md, i.e. this text that you're reading now. It also takes all the chapters, which are located in `book/xx/y.md`, where *xx* is the two-siffered number of the chapter, and *y* is the name of the chapter in [Camel case](http://en.wikipedia.org/wiki/CamelCase). The chapters are combined into one file, that is the source for most scripts.
 
-Meta-information about each HTML file are expressed in a comment block, which contains a JSON object, located in the top of each MD file. Below is an example:
-
-    <!--{
-      "key": "value"
-    }-->
-
 In addition to generating the HTML files, the first command also generates the CSS files necessary. These are generated using [Sass](http://sass-lang.com/), a CSS pre-processor.
 
 For convenience there's also `grunt watch` that the default grunt-task (i.e. publication) each time a chapter, template or SCSS-file is saved.
