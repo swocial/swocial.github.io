@@ -1,29 +1,10 @@
 var extend = require('extend'),
-  moment = require('moment')
-  meta = require('../book/meta');
+    moment = require('moment')
+    meta = require('../book/meta');
 
-var extractComment = function (src) {
-  var start = src.search(/<!--/g);
-  var end = src.search(/-->/g);
-  return start == 0 && end != -1 ? src.substr(start, end + 3) : "";
-};
-
-var extractLink = function (src) {
-  var start = src.search(/\<a /g);
-  var end = src.search(/\<\/a\>/g);
-  return {
-    start: start,
-    end: end + 4,
-    length: end - start + 4,
-    html: src.substr(start, end - start + 4)
-  };
-};
-
-var convertLinkToInternalEpubLink = function (link) {
-  var isInternal = link.search(/href=\"http/g) == -1 || link.search(/href=\"\#/g);
-  if (!isInternal) return link;
-  return link.replace('href="', 'epub:type="chapter" href="');
-};
+var extractComment = require('../tools/extractComments'),
+    extractLink = require('../tools/extractLink'),
+    convertLinkToInternalEpubLink = require('../tools/convertLinkToInternalEpubLink');
 
 module.exports = function (grunt) {
   return {
@@ -54,10 +35,6 @@ module.exports = function (grunt) {
         {
           flatten: true,
           src: 'temp/all.md',
-          dest: 'swocial-manifesto.html'
-        },
-        {
-          src: './README.md',
           dest: 'index.html'
         }
       ]

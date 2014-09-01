@@ -1,10 +1,9 @@
-<!--{
-  "title": "Infrastructure",
-  "status": 0,
-  "previous": "economics",
-  "next": "security"
-}-->
 
 # Infrastructure
+
+<!--{
+  "title": "Infrastructure",
+  "status": 0
+}-->
 
 A little bit of writing...

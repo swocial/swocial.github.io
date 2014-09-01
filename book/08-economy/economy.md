@@ -1,10 +1,9 @@
-<!--{
-  "title": "Economy",
-  "status": 0,
-  "previous": "user-experience",
-  "next": "society"
-}-->
 
 # Economy
+
+<!--{
+  "title": "Economy",
+  "status": 0
+}-->
 
 A little bit of writing...

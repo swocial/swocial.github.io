@@ -1,9 +1,3 @@
-<!--{
-  "title": "The Swocial manifesto",
-  "status": null,
-  "previous": null,
-  "next": "intro"
-}-->
 # The Swocial manifesto
 
 There is a growing trend of walled gardens on the Internet. At the same time there's an increased exposure of information about its inhabitants. The driving forces behind these trends does not seem to be about protecting the users and creating a better experience for them, but rather about increasing value for stockholders and exposure for advertisers.

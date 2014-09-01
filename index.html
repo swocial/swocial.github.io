@@ -9,53 +9,120 @@
     <link href="css/github.css" media="all" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <header>
-      
-    </header>
     <div role="main">
-      <h1 id="the-swocial-manifesto">The Swocial manifesto</h1>
-<p>There is a growing trend of walled gardens on the Internet. At the same time there&#39;s an increased exposure of information about its inhabitants. The driving forces behind these trends does not seem to be about protecting the users and creating a better experience for them, but rather about increasing value for stockholders and exposure for advertisers.</p>
-<p>Walled gardens have their uses, but they need to serve the needs of the private citizens, and not the needs of advertisers, corporations and governments and others that may have interests misaligned with those of the users. In other words, walled gardens are good if we are the gardeners.</p>
-<h2 id="the-book">The book</h2>
-<p><a href="http://github.com/swocial">The Swocial project</a> seeks to empower users with tools that enable them to handle their data, administrate them across service providers, and to let their data be utilized in new and innovative ways. There are many facets of this, consisting of many, intertwined challenges, which is why I&#39;ve decided to lay them out in this manifesto.</p>
-<p>It is a book that&#39;s in the making, and if you want to start reading what&#39;s available, start with the <a href="http://swocial.github.io/swocial-manifesto.html#introduction">Introduction</a> (in time it will also be available in other formats, such as PDF, EPUB and Mobi, but for now it&#39;s only available as a web page). If you&#39;re wondering about the status of chapters (i.e. &quot;How finished are they?&quot;), please read <a href="https://github.com/swocial/swocial.github.io/wiki">the wiki</a>.</p>
-<p>The book will be structured into two parts; the first part will explain some fundamental concepts necessary to understand to follow the ensuing discussion. The second part will dwell on the different aspects of a distributed social network that needs to be secure, ensure a user&#39;s privacy, be easy to use and provide a good user experience, and offer a flexible range of means to distribute and consume data. It will also take into account that such an environment needs to offer incentives to service providers, i.e. allow them to make profit, as all systems are somehow bound to economics (financial surplus being one for service providers).</p>
-<p>The Internet is a wonder of technological and cultural achievement. It is also - albeit a fact disliked by many computer scientists - very human. One aspect of this is the social networks, where a ever-growing number of people decides to partake and share their lives.</p>
-<p>I hope that this book can be part of a movement that envisions a world where the power of the share lies with users that do it - not the corporations and governments that aggregate it for their own profits.</p>
-<h3 id="how-to-generate-the-book">How to generate the book</h3>
-<p>To generate the book in all available formats, simple run <code>grunt</code>. In addition there are scripts for each format:</p>
-<pre><code>grunt github
-grunt epub
-grunt mobi
-grunt pdf</code></pre>
-<p>The first command generates the file index.html from README.md, i.e. this text that you&#39;re reading now. It also takes all the chapters, which are located in <code>book/xx/y.md</code>, where <em>xx</em> is the two-siffered number of the chapter, and <em>y</em> is the name of the chapter in <a href="http://en.wikipedia.org/wiki/CamelCase">Camel case</a>. The chapters are combined into one file, that is the source for most scripts.</p>
-<p>Meta-information about each HTML file are expressed in a comment block, which contains a JSON object, located in the top of each MD file. Below is an example:</p>
-<pre><code>&lt;!--{
-  &quot;key&quot;: &quot;value&quot;
-}--&gt;</code></pre>
-<p>In addition to generating the HTML files, the first command also generates the CSS files necessary. These are generated using <a href="http://sass-lang.com/">Sass</a>, a CSS pre-processor.</p>
-<p>For convenience there&#39;s also a command that automates the generating of github files, <code>grunt watch:gh</code>, so that whenever you save a MD or a SCSS file, it will run <code>grunt:github</code>.</p>
-<h2 id="ways-to-contribute">Ways to contribute</h2>
-<p>There are several ways to contribute to the project:</p>
+      <h1 id="introduction">Introduction</h1>
+<p><em>Status: <a href="https://github.com/swocial/swocial.github.io/wiki/status#0">Chapter scaffolded (0)</a></em></p>
+<p>This book is the manifesto of <a href="http://github.com/swocial">the Swocial project</a>. The project is about creating a distributed network of social applications, which as its very core has the interest of the private citizens as its core. That means to the extent possible allow the users to administrate the content they have produced, create rules for who get to see what, and - in regard to copyrights - decide how it may be used by others. This raises several questions about how this should be done in terms of technical requirements, user experience, and economical and legal ramifications.</p>
+<p>The environment the project strives to create cannot be realized without collaboration. This need creates roles for personas in addition to that of being a private citizen - service providers, distributors, curators, and many more. There is also the challenges of economics, as the intrastructure is not an exempt of a society that requires goods and services to be exchanged in order for its citizens to survive.</p>
+<p>Manifesting the project will create challenges based on the fact that it will not be a singular entity - in its optimal form it will be multiple initiatives trying to create value for users, bound together by the exchange of data with and for the users. There will also be challenges as the project becomes bigger and more integrated with existing infrastructure and technical solutions. There will be competitors that will undermine the effort of the projects contributors. There will be multiple debates based on existing cultural societies and power structures. If it succeeds, it will grow beneath the grasp of what a singular person, organization, or interest group can control.</p>
+<h2 id="part-one-fundamental-concepts">Part one - Fundamental concepts</h2>
+<p>There are factors concerning the project that have overlapping issues, conflicting requirements, and probably many other challenges I haven&#39;t though of. But the hope is to try to identify as many facets as possible, and deal with them succinctly. In order for this to be done, I must lay some foundations. This will be the purpose of part one, which will consist of three chapters.</p>
+<p>The first chapter in part one will be about the concepts of <a href="#the-semantic-web">Semantic Web</a>. Many of these standards are already used throughout the net, in other projects, and have proven to be sturdy tools for expressing and communicate data.</p>
+<p>The second chapter is about <a href="#distributed-social-networks">Distributed Social Networks (DSNs)</a>. In addition to describing the core concepts of what they entail, it will also note some existing projects, and how they differ from the Swocial project.</p>
+<p>Lastly, there is the chapter on <a href="#economics">Economics</a>. This will describe some basic theories of economics, compare them, and situate how the Swocial project relates to them.</p>
+<h2 id="part-two-discussions">Part two - Discussions</h2>
+<p>This part will take on several discussions there are to be made on the Swocial project. It will have a bottom-to-top approach, meaning each chapter will in part build atop the discussion delt with in earlier chapter, i.e. there will be an accumulation of discussions.</p>
+<p>The first chapter will be on <a href="#infrastructure">Infrastructure</a>, which includes different standards that are corner stones for DSNs, such as formats of data, protocols, and vocabularies. There will also be discussion on technical challenges, such as redundant data, synchronization issues, and latency.</p>
+<p>The second chapter is about <a href="#security">Security</a>, and deals with challenges such as cryptography, privacy, and authentication. It will propose several schemas to classes of users, and how these should be treated as across DSNs.</p>
+<p>As important as the more hard issues such as infrastructure and security, is how the user interacts with the system, and this will be discussed in the chapter on <a href="#user-experience">User experience</a>. Notably, the fact that a person has limited time to administrate their impact on the Internet, and there is a need for agents to work on the behalf of the users.</p>
+<p>With issues regarding infrastructure, security, and user experience in place, it&#39;s time to discuss the <a href="#economy">Economy</a> in a DSN. This involves currencies and markets, services and service providers, consumers and producers. An emphasis will be put on the different roles people will play in this economy, and how some of these can be troublesome when combined.</p>
+<p>At last there will be a discussion on <a href="#society">Society</a>; how will the Swocial project situate itself in the existing digital social sphere. How will it extend cultural structures already in place, what power structures should be in place (if any), and should these reflect or differ from the existing ones manifested throuh the development of human culture.</p>
+<h2 id="who-the-book-is-for">Who the book is for</h2>
+<p>There are several groups of people who may be interested in the project, and hopefully this manifesto will be a comprehensive guide for those who want to dwell on its aspects. These groups can be divided as the following sections describe, but note that membership to one group does not exclude membership to another. People are diverse, and may wear multiple hats.</p>
+<h3 id="the-private-citizens">The private citizens</h3>
+<p>Users of social networks, consumers and producers as they are interchangeably, need to hold positions of power, so that their interests are protected.</p>
+<p><strong>Citizens of social networks want:</strong></p>
 <ul>
-<li>Create a project that&#39;s based on ideas presented in this manifesto, and I&#39;ll add as part of <a href="https://github.com/swocial">the Swocial project</a>.</li>
-<li>Disagree with the manifesto? <a href="https://github.com/swocial/swocial.github.io/issues">Create an issue</a>.</li>
-<li>Want to contribute text? <a href="https://github.com/swocial/swocial.github.io/pulls">Send a pull request</a>.</li>
-<li>Want to connect? Contact me on <a href="https://twitter.com/megoth">Twitter</a> or by <a href="mailto:arne.hassel@gmail.com">email</a>.</li>
+<li>To own the data of which they are the producers<ul>
+<li>To administrate this information in a way that isn&#39;t time-consuming or in other way burdensome to their lives and resources</li>
 </ul>
-<p>Do note that the book holds no license (or rather, this repository hasn&#39;t listed any), and is free to use as you wish. As ideas should be.</p>
+</li>
+<li>To make use of this data as they wish, which entails<ul>
+<li>To exchange parts with friends</li>
+<li>To broadcast parts with followers</li>
+<li>To allow service providers access, so that they can make use of it in some way that benefit the citizens</li>
+</ul>
+</li>
+<li>To receive updates from the social network they are part of<ul>
+<li>Information that can be consumed and utilized in accordance with an agreement</li>
+</ul>
+</li>
+<li>To the extent possible know what has been distributed, and to who</li>
+</ul>
+<h3 id="the-service-providers">The service providers</h3>
+<p>There are limitations to what can be accomplished by users alone. For a DSN to be possible, it needs to make use of a distributed network already in place, e.g. the Internet. In addition to this structural requirement, there also a need for service providers. A fact that must be acknowledged is that these providers are part of an economic system that requires them to turn in profit. Service providers need to be an integrated part of the system, and their needs should also be fulfilled (as long as they aren&#39;t in conflict with that of the users).</p>
+<p><strong>Service providers should be able:</strong></p>
+<ul>
+<li>To develop and maintain a service without being required to offer full transparency (e.g. allowed to own and use proprietary code)</li>
+<li>To utilize the service in a way that enables them to continue the service (e.g. make profit)</li>
+</ul>
+<p>At the same time a service is dependent on trust from its users, as they grant access to the data that can be processed. The mechanisms in play should make use of this, so that users can ensure that a service provider doesn&#39;t abuse the trust its given, e.g. by violating the statements of use of data.</p>
+<h3 id="the-developers-and-hackers">The developers and hackers</h3>
+<p>A developer may be a service provider, or part of a team that work as service provider, but not necessarily so. They may simply want to toy around with the data available, try to enhance them in new and unexpected ways. Especially when it comes to a persons own data, that should be as easily accessable and utilized as possible, and APIs should allow for read and write of data. At the same time, it&#39;s important that security and consistancy are taken care of, so that a user don&#39;t corrupt their data by mistake.</p>
+<p>I&#39;ve put hackers along with developers, as they have a lot of the same interests. The system should have white and grey hat hackers in mind, who are invaluable contributors to a system that must have high focus on security.</p>
+<p><strong>Developers/hackers wish to:</strong></p>
+<ul>
+<li>Be innovative and utilize data in original/new ways</li>
+<li>Get access to data in an easy and secure manner</li>
+<li>Be able to report on faults in the systems</li>
+</ul>
+<h3 id="cultural-architects">Cultural architects</h3>
+<p>As social networks are part of the bigger, human picture, there will be people who are interested in tools to facilitate these digital networks. [more to come]</p>
+<h3 id="advertisers">Advertisers</h3>
+<p>[more to come]</p>
+<h3 id="scientists">Scientists</h3>
+<p>[more to come]</p>
+<h1 id="the-semantic-web">The Semantic Web</h1>
+<p><em>Status: <a href="https://github.com/swocial/swocial.github.io/wiki/status#0">Chapter scaffolded (0)</a></em></p>
+<p>A little bit of writing...</p>
+<h2 id="resource-description-framework-rdf-">Resource Description Framework (RDF)</h2>
+<h3 id="rdfs">RDFS</h3>
+<h3 id="owl">OWL</h3>
+<h2 id="sparql-protocol-and-rdf-query-language-sparql-">SPARQL Protocol and RDF Query Language (SPARQL)</h2>
+<h2 id="linked-data">Linked Data</h2>
+<h2 id="serializations">Serializations</h2>
+<h3 id="rdf-xml">RDF/XML</h3>
+<h3 id="json-ld">JSON-LD</h3>
+<h3 id="other-notable-formats">Other notable formats</h3>
+<p>N-Triples</p>
+<p>Turtle</p>
+<p>N3</p>
+<h2 id="vocabularies">Vocabularies</h2>
+<p>The Friend of a Friend (FOAF) project</p>
+<h1 id="distributed-social-networks">Distributed Social Networks</h1>
+<p><em>Status: <a href="https://github.com/swocial/swocial.github.io/wiki/status#0">Chapter scaffolded (0)</a></em></p>
+<p>A little bit of writing...</p>
+<h2 id="existing-distributed-social-networks">Existing distributed social networks</h2>
+<p>There are many projects ongoing that tries to enable this, but I believe none of them have matured to the point that they can be considered serious contenders. I believe, in fact, that the fault lies in trying to create one system that can do it all. We need to utilize the many features that the Internet has to offer.</p>
+<p>One lesson worth taking from the beginning of the Internet as a mainstream phenomena, is its distributed nature. A point that can be derived from the answer a supervisor in InterNIC gave, when <a href="http://archive.wired.com/wired/archive/2.10/mcdonalds_pr.html">prompted by a Wired journalist whether or not he could register mcdonalds.com</a> for himself:</p>
+<blockquote>
+<p>&quot;There is nothing that says I can stop you from doing that,&quot; he said. &quot;We really need some policy.&quot;</p>
+<p>&quot;The problem with the Internet is, who&#39;s in charge?&quot; he added wryly. &quot;When we figure that out, there will be a meeting.&quot;</p>
+</blockquote>
+<p>Another feature that should be utilized is the many standards that are available. If you&#39;re going to have larger groups of people collaborate, then you need to have standards they can agree on. A set of standards that I believe is ripe for use in the distributed social networks, is many of those collectively known through their umbrella <a href="http://www.w3.org/standards/semanticweb/">The Semantic Web (SW)</a>.</p>
+<p>Most important amongst these is <a href="http://www.w3.org/RDF/">Resource Description Framework (RDF)</a>, which lays the foundations for exchanging information through graphs. There are also formats like <a href="http://json-ld.org/">JSON-LD</a> that allows for RDF to be exchanged in an easy-to-read manner for developers.</p>
+<h1 id="economics">Economics</h1>
+<p><em>Status: <a href="https://github.com/swocial/swocial.github.io/wiki/status#0">Chapter scaffolded (0)</a></em></p>
+<p>A little bit of writing...</p>
+<h1 id="infrastructure">Infrastructure</h1>
+<p><em>Status: <a href="https://github.com/swocial/swocial.github.io/wiki/status#0">Chapter scaffolded (0)</a></em></p>
+<p>A little bit of writing...</p>
+<h1 id="security">Security</h1>
+<p><em>Status: <a href="https://github.com/swocial/swocial.github.io/wiki/status#0">Chapter scaffolded (0)</a></em></p>
+<p>A little bit of writing...</p>
+<h1 id="user-experience">User experience</h1>
+<p><em>Status: <a href="https://github.com/swocial/swocial.github.io/wiki/status#0">Chapter scaffolded (0)</a></em></p>
+<p>A little bit of writing...</p>
+<h1 id="economy">Economy</h1>
+<p><em>Status: <a href="https://github.com/swocial/swocial.github.io/wiki/status#0">Chapter scaffolded (0)</a></em></p>
+<p>A little bit of writing...</p>
+<h1 id="society">Society</h1>
+<p><em>Status: <a href="https://github.com/swocial/swocial.github.io/wiki/status#0">Chapter scaffolded (0)</a></em></p>
+<p>A little bit of writing...</p>
 
     </div>
     <footer>
       <nav>
-        <ul>
-          
-          
-          <li class="next">
-            <a href="intro" rel="next">Next chapter &#8594;</a>
-          </li>
-          
-        </ul>
         <ul>
           <li>
             <a href="http://swocial.github.io" rel="index">The Swocial manifesto</a>

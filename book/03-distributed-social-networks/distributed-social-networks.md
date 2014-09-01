@@ -1,11 +1,10 @@
-<!--{
-  "title": "Distributed Social Networks",
-  "status": 0,
-  "previous": "semantic-web",
-  "next": "economics"
-}-->
 
 # Distributed Social Networks
+
+<!--{
+  "title": "Distributed Social Networks",
+  "status": 0
+}-->
 
 A little bit of writing...
 

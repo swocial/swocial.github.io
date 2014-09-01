@@ -1,10 +1,9 @@
-<!--{
-  "title": "Economics",
-  "status": 0,
-  "previous": "distributed-social-networks",
-  "next": "infrastructure"
-}-->
 
 # Economics
+
+<!--{
+  "title": "Economics",
+  "status": 0
+}-->
 
 A little bit of writing...

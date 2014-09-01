@@ -2,35 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>${title}</title>
+    <title>The Swocial manifesto</title>
     <meta http-equiv="Content-Language" content="en">
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="css/github.css" media="all" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <header>
-      <% if (status || status == 0) { %>
-        <p>Status: <a href="https://github.com/swocial/swocial.github.io/wiki/status#${status}">${status} - ${statusName}</a></p>
-      <% } %>
-    </header>
     <div role="main">
       ${content}
     </div>
     <footer>
       <nav>
-        <ul>
-          <% if (previous) { %>
-          <li>
-            <a href="${previous}" rel="previous">&#8592; Previous chapter</a>
-          </li>
-          <% } %>
-          <% if (next) { %>
-          <li class="next">
-            <a href="${next}" rel="next">Next chapter &#8594;</a>
-          </li>
-          <% } %>
-        </ul>
         <ul>
           <li>
             <a href="http://swocial.github.io" rel="index">The Swocial manifesto</a>
