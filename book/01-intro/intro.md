@@ -1,9 +1,6 @@
 # Introduction
 
-<!--{
-  "title": "Introduction",
-  "status": 0
-}-->
+{{status,0}}
 
 This book is the manifesto of [the Swocial project](http://github.com/swocial). The project is about creating a distributed network of social applications, which has the interest of the private citizens as its very core. That means to the extent possible allow the users to administrate the content they have produced, create rules for who get to see what, and - in regard to copyrights - decide how it may be used by others. This raises several questions about how this should be done in terms of technical requirements, user experience, and economical and legal ramifications.
 

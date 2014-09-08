@@ -1,10 +1,6 @@
-
 # The Semantic Web
 
-<!--{
-  "title": "The Semantic Web",
-  "status": 0
-}-->
+{{status,0}}
 
 A little bit of writing...
 
@@ -35,3 +31,8 @@ N3
 ## Vocabularies
 
 The Friend of a Friend (FOAF) project
+
+
+
+
+

@@ -1,10 +1,6 @@
-
 # Distributed Social Networks
 
-<!--{
-  "title": "Distributed Social Networks",
-  "status": 0
-}-->
+{{status,0}}
 
 A little bit of writing...
 
@@ -21,3 +17,5 @@ One lesson worth taking from the beginning of the Internet as a mainstream pheno
 Another feature that should be utilized is the many standards that are available. If you're going to have larger groups of people collaborate, then you need to have standards they can agree on. A set of standards that I believe is ripe for use in the distributed social networks, is many of those collectively known through their umbrella [The Semantic Web (SW)](http://www.w3.org/standards/semanticweb/).
 
 Most important amongst these is [Resource Description Framework (RDF)](http://www.w3.org/RDF/), which lays the foundations for exchanging information through graphs. There are also formats like [JSON-LD](http://json-ld.org/) that allows for RDF to be exchanged in an easy-to-read manner for developers.
+
+

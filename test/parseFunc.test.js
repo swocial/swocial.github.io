@@ -58,12 +58,11 @@ describe('parseFunc', function () {
 		assert.equals(parsedText, 'foo42 bar 1337baz');
 	});
 
-	it('should parse a redundant function only once', function () {
-		var spy = sinon.stub().returns(42);
-		parser.addFunction('test', spy);
-		parsedText = parser.parse('foo{{test}} bar {{test}}baz');
-		assert.equals(parsedText, 'foo42 bar 42baz');
-		assert(spy.calledTwice);
+	it('should parse functions each', function () {
+		var a = 0;
+		parser.addFunction('test', function () { return a++; });
+		parsedText = parser.parse('foo{{test}} bar {{test}}baz{{test}}');
+		assert.equals(parsedText, 'foo0 bar 1baz2');
 	});
 
 	it('should throw exception when unknown function is parsed', function () {
