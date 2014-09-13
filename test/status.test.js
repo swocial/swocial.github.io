@@ -3,9 +3,11 @@ var buster = require('buster')
 buster.spec.expose();
 
 describe('status', function () {
+	var parser;
+	
 	beforeEach(function () {
 		parser = require('../tools/parseFunc')();
-		status = require('../tools/status')(parser, {
+		require('../tools/status')(parser, {
 			status: ['test'],
 			url: 'test#'
 		});

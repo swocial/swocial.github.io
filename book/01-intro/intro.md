@@ -16,7 +16,7 @@ There are factors concerning the project that have overlapping issues, conflicti
 
 The first chapter in part one will be about the concepts of [Semantic Web](#the-semantic-web). Many of these standards are already used throughout the net, in other projects, and have proven to be sturdy tools for expressing and communicate data.
 
-The second chapter is about [Distributed Social Networks (DSNs)](#distributed-social-networks). In addition to describing the core concepts of what they entail, it will also note some existing projects, and how they differ from the Swocial project.
+The second chapter is about [{{ac,dsn}}](#distributed-social-networks). In addition to describing the core concepts of what they entail, it will also note some existing projects, and how they differ from the Swocial project.
 
 Lastly, there is the chapter on [Economics](#economics). This will describe some basic theories of economics, compare them, and explain how the Swocial project correlates in the economical landscape.
 
@@ -24,7 +24,7 @@ Lastly, there is the chapter on [Economics](#economics). This will describe some
 
 This part will take on several discussions there are to be made on the Swocial project. It will have a bottom-to-top approach, meaning each chapter will in part build atop the discussion delt with in earlier chapter, i.e. there will be an accumulation of discussions.
 
-The first chapter will be on [Infrastructure](#infrastructure), which includes different standards that are corner stones for DSNs, such as formats of data, protocols, and vocabularies. There will also be discussion on technical challenges, such as redundant data, synchronization issues, and latency.
+The first chapter will be on [Infrastructure](#infrastructure), which includes different standards that are corner stones for {{ac,dsn}}, such as formats of data, protocols, and vocabularies. There will also be discussion on technical challenges, such as redundant data, synchronization issues, and latency.
 
 The second chapter is about [Security](#security), and deals with challenges such as cryptography, privacy, and authentication. It will propose several schemas to classes of users, and how these should be treated as across DSNs.
 

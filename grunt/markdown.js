@@ -1,10 +1,6 @@
 var extend = require('extend'),
     meta = require('../book/meta');
 
-var extractComment = require('../tools/extractComments'),
-    extractLink = require('../tools/extractLink'),
-    convertLinkToInternalEpubLink = require('../tools/convertLinkToInternalEpubLink');
-
 module.exports = function (grunt) {
   return {
     github: {

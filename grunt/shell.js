@@ -21,6 +21,7 @@ module.exports = {
 							--standalone \
 							--normalize \
 							--smart \
+							--template=templates/default.latex \
 							--toc '
 	},
 	generateMobi: {

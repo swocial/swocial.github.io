@@ -1,6 +1,6 @@
-var extractComment = require('../tools/extractComments');
-
 var parser = require('../tools/parseFunc')();
+
+var acronym = require('../tools/acronym')(parser),
     status = require('../tools/status')(parser, {
       status: [
         'Chapter scaffolded',
@@ -16,7 +16,6 @@ var parser = require('../tools/parseFunc')();
 module.exports = {
   markdown: {
   	options: {
-      separator: '\n',
 	    process: function (src) {
         return parser.parse(src);
 	    }
